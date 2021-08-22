@@ -70,3 +70,16 @@ The country's PPP = Cost of goods in the country / Cost of goods in another coun
 More information about this algorithm exists at: https://www.ig.com/en/trading-strategies/what-is-purchasing-power-parity--ppp---191106
 
 Read the data from each of the github tables into a dataframe. We are only interested in the rows concerning individual countries, so we will delete any row with information about a country grouping (Ex: "Arab World"). We also need to drop any unecessary columns or rename any columns that might conflict with the other tables we will merge that table with.
+
+## Conclusions
+### Takeaways:
+
+- PPP (Purchasing Power Parity) is not a signifigant indicator of a country's national team performances at any level (global or regional).
+- The GDP (Gross Domestic Product) and GDP per capita of a country are possitively correlated with their men's national team performances at a global level, but inconsistent at a regional level.
+- The fragility index of a country is a signifigant indicator of a negative correlation between a country's instability and their men's national team's performance (and conversely, a possitive correlation between a country's stability and performance) for all confederations other than CONMEBOL.
+- The Brain Drain of a country is comparatively the most signifigant indicator of a negative correlation between itself and the performance of that country's national team across all confederations aside from the outlier OFC confederation.
+- 
+## Future Possibilities
+
+The analytic method we used to quantify the signficance of an indicator was rather simple; Isolate the variable to its own column, compare the variable against the potential dependent variable via a linear regression, and check the significance with p-value. We were consistent with our methodolgy, which limits the extent of unnecassary skews due to a change in analytic approach. And even though we didnt find a definitive set of indicators that could correlate to a country's football performance, we havent analyzed everything. There are many other factors, from climate conditions to government spending breakdowns that could be attributed to football performance. Additionally, there are many other models that could yield better predictions than a linear regression, such as a polynomial regression, SVM, or even a neural network. As a final takeaway, this tutorial is a mere stepping stone to the wide range of analytical approaches one could take to explain what aspects of a country most influences its professional football performace.
+
